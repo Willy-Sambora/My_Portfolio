@@ -1,0 +1,119 @@
+#skills {
+    overflow: hidden;
+    width: 100%; /* Changed from 200vw to 100% for better responsiveness */
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillsBars {
+    margin: 1.5rem;
+    width: 100%; /* Changed from 100vw to 100% for better responsiveness */
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+.skillBarText > p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .skillTitle {
+        font-size: 2.5rem;
+    }
+
+    .skillDescription {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .skillsBars {
+        max-width: 100%; /* Use full width */
+    }
+
+    .skillBar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        padding: 1rem;
+    }
+
+    .skillBarImg {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 1rem; /* Add bottom margin */
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .skillBarText > p {
+        font-size: 0.9rem;
+        text-align: center; /* Center align text */
+    }
+}
+
+@media (max-width: 480px) {
+    .skillTitle {
+        font-size: 2rem;
+    }
+
+    .skillDescription {
+        font-size: 0.8rem;
+        padding: 0 0.5rem;
+    }
+
+    .skillsBars {
+        max-width: 100%; /* Use full width */
+    }
+
+    .skillBar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        padding: 0.5rem;
+    }
+
+    .skillBarImg {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 0.5rem; /* Add bottom margin */
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .skillBarText > p {
+        font-size: 0.8rem;
+        text-align: center; /* Center align text */
+    }
+}
